@@ -23,14 +23,10 @@ test_list = []
 counter = 0
 for line in fhandle:
     line = line.strip()
-    print(line)
     group_set = set(line)
-    print(group_set)
     for value in group_set:
         group_list.append(value)
-    print(group_list)
     group_counter += 1
-    print(group_counter)
     if group_counter == 3:
         for x in group_list:
             if group_list.count(x) >2:
